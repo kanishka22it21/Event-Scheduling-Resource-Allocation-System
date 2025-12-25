@@ -37,9 +37,15 @@ This logic handles:
 
 ---
 
-## 📁 Project Structure
+##Steps to run the project 
+
+---
+
+Step 1: Clone the Repository
+```bash
+git clone https://github.com/kanishka22it21/Event-Scheduling-Resource-Allocation-System.git
+cd Event_Scheduling_Resource_Allocation_System
 
 
 
-**Logic Used:**
 
