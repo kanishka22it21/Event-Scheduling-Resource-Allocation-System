@@ -46,6 +46,11 @@ Step 1: Clone the Repository
 git clone https://github.com/kanishka22it21/Event-Scheduling-Resource-Allocation-System.git
 cd Event_Scheduling_Resource_Allocation_System
 
+Step 2: Create Virtual Environment
+python -m venv venv
+venv\Scripts\activate
+
+
 
 
 
