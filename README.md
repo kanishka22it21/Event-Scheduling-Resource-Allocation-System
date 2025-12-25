@@ -4,16 +4,6 @@ A web-based application developed using **Flask** that allows organizations to s
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Backend:** Python (Flask)
-- **Database:** SQLite
-- **ORM:** SQLAlchemy
-- **Frontend:** HTML, CSS, Bootstrap
-- **Tools:** VS Code, GitHub
-
----
-
 ## ✨ Features
 
 - Create, view, and delete events  
@@ -23,6 +13,16 @@ A web-based application developed using **Flask** that allows organizations to s
 - Clear conflict display page  
 - Resource utilization report based on date range  
 - Clean and responsive Bootstrap UI  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Python (Flask)
+- **Database:** SQLite
+- **ORM:** SQLAlchemy
+- **Frontend:** HTML, CSS, Bootstrap
+- **Tools:** VS Code, GitHub
 
 ---
 
