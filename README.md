@@ -39,16 +39,48 @@ This logic handles:
 
 ##Steps to run the project 
 
----
 
 Step 1: Clone the Repository
 ```bash
 git clone https://github.com/kanishka22it21/Event-Scheduling-Resource-Allocation-System.git
 cd Event_Scheduling_Resource_Allocation_System
+```
 
 Step 2: Create Virtual Environment
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
+
+Step 3: Install Required Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+Step 4: Run the Application
+```bash
+python app.py
+```
+
+Step 5: Open in Browser
+```bash
+http://127.0.0.1:5000
+```
+
+### Events Page
+![Events](screenshots/events.png)
+
+### Resources Page
+![Resources](screenshots/resources.png)
+
+### Allocation Page
+![Allocate](screenshots/allocate.png)
+
+### Conflicts Page
+![Conflicts](screenshots/conflicts.png)
+
+### Report Page
+![Report](screenshots/report.png)
 
 
 
