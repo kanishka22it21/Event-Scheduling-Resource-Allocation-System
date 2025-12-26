@@ -83,9 +83,8 @@ http://127.0.0.1:5000
 ![Report](screenshot/reports.PNG)
 
 ### Video
-![Video](screenshot/video.mp4)
-## Demo
-![Demo Video](video.gif)
+▶️ [Click here to watch the video](screenshot/video.mp4)
+
 
 
 
