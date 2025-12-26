@@ -1,6 +1,4 @@
 flask
 flask_sqlalchemy
-<<<<<<< HEAD
+
 pymysql
-=======
->>>>>>> 58a8658 (Initial commit - Event Scheduling & Resource Allocation System)
