@@ -84,6 +84,9 @@ http://127.0.0.1:5000
 
 ### Video
 ![Video](screenshot/video.mp4)
+## Demo
+![Demo Video](video.gif)
+
 
 
 
