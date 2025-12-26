@@ -68,19 +68,19 @@ http://127.0.0.1:5000
 ```
 
 ### Events Page
-![Events](screenshot/events.png)
+![Events](screenshot/events.PNG)
 
 ### Resources Page
-![Resources](screenshot/resources.png)
+![Resources](screenshot/resources.PNG)
 
 ### Allocation Page
-![Allocate](screenshot/allocate.png)
+![Allocate](screenshot/allocate.PNG)
 
 ### Conflicts Page
-![Conflicts](screenshot/conflicts.png)
+![Conflicts](screenshot/conflicts.PNG)
 
 ### Report Page
-![Report](screenshot/reports.png)
+![Report](screenshot/reports.PNG)
 
 ### Video
 ![Video](screenshot/video.mp4)
