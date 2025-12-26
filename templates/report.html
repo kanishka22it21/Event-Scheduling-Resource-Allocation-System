@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Resource Utilization Report</h3>
+
+<form method="post">
+    <input type="datetime-local" name="start" class="form-control mb-2" required>
+    <input type="datetime-local" name="end" class="form-control mb-2" required>
+    <button class="btn btn-success">Generate</button>
+</form>
+
+<hr>
+
+<table class="table table-bordered">
+<tr><th>Resource</th><th>Hours Used</th></tr>
+{% for r in data %}
+<tr>
+<td>{{ r[0] }}</td>
+<td>{{ r[1] }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Add Resource</h3>
+
+<form method="post" class="mb-3">
+    <input class="form-control mb-2" name="name" placeholder="Resource Name" required>
+    <input class="form-control mb-2" name="type" placeholder="Resource Type" required>
+    <button class="btn btn-success">Add Resource</button>
+</form>
+
+<h3>Resources List</h3>
+<table class="table table-bordered">
+<tr><th>Name</th><th>Type</th><th>Actions</th></tr>
+{% for r in resources %}
+<tr>
+    <td>{{ r.resource_name }}</td>
+    <td>{{ r.resource_type }}</td>
+    <td>
+        <a href="/resource/edit/{{ r.resource_id }}" class="btn btn-sm btn-info">Edit</a>
+        <a href="/resource/delete/{{ r.resource_id }}" class="btn btn-sm btn-danger">Delete</a>
+    </td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

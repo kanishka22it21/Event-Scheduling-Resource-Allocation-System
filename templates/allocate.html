@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Allocate Resource</h3>
+
+<form method="post" class="mb-3">
+    <label class="form-label">Select Event</label>
+    <select class="form-control mb-2" name="event" required>
+        {% for e in events %}
+        <option value="{{ e.event_id }}">{{ e.title }} ({{ e.start_time.strftime('%Y-%m-%d %H:%M') }} - {{ e.end_time.strftime('%Y-%m-%d %H:%M') }})</option>
+        {% endfor %}
+    </select>
+
+    <label class="form-label">Select Resource</label>
+    <select class="form-control mb-2" name="resource" required>
+        {% for r in resources %}
+        <option value="{{ r.resource_id }}">{{ r.resource_name }} ({{ r.resource_type }})</option>
+        {% endfor %}
+    </select>
+
+    <button class="btn btn-success">Allocate</button>
+</form>
+
+<h3>Existing Allocations</h3>
+<table class="table table-bordered">
+<tr>
+    <th>Event</th>
+    <th>Resource</th>
+    <th>Start Time</th>
+    <th>End Time</th>
+</tr>
+{% for a in allocations %}
+<tr>
+    <td>{{ a.event.title }}</td>
+    <td>{{ a.resource.resource_name }}</td>
+    <td>{{ a.event.start_time }}</td>
+    <td>{{ a.event.end_time }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

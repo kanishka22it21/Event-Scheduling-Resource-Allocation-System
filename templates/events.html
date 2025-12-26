@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Create Event</h3>
+<form method="post">
+    <input class="form-control mb-2" name="title" placeholder="Title" required>
+    <input class="form-control mb-2" type="datetime-local" name="start" required>
+    <input class="form-control mb-2" type="datetime-local" name="end" required>
+    <textarea class="form-control mb-2" name="desc" placeholder="Description"></textarea>
+    <button class="btn btn-success">Add Event</button>
+</form>
+
+<hr>
+
+<h3>Events</h3>
+<table class="table table-bordered">
+<tr><th>Title</th><th>Time</th><th>Action</th></tr>
+{% for e in events %}
+<tr>
+<td>{{ e.title }}</td>
+<td>{{ e.start_time }} → {{ e.end_time }}</td>
+<td>
+    <a href="/event/delete/{{ e.event_id }}" class="btn btn-sm btn-danger">Delete</a>
+</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

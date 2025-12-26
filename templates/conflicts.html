@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Conflicting Allocations</h3>
+
+{% if conflicts %}
+<table class="table table-bordered">
+<tr>
+    <th>Event 1</th>
+    <th>Event 2</th>
+    <th>Resource</th>
+</tr>
+{% for c in conflicts %}
+<tr>
+    <td>{{ c[0] }}</td>
+    <td>{{ c[1] }}</td>
+    <td>{{ c[2] }}</td>
+</tr>
+{% endfor %}
+</table>
+{% else %}
+<div class="alert alert-success">No conflicts found!</div>
+{% endif %}
+{% endblock %}
